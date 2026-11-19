@@ -39,8 +39,8 @@ pip install mss pillow winsdk rapidfuzz
 ## 安装与启动
 
 ```powershell
-git clone <仓库地址>
-cd translate_db
+git clone https://github.com/yuguo21/win-translator.git
+cd win-translator
 
 # 1) 复制一份配置（config.json 里存你的 API key，已被 .gitignore 排除）
 copy config.example.json config.json
