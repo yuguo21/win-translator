@@ -1,0 +1,46 @@
+{
+  "translator": {
+    "provider": "youdao",
+    "api_url": "https://ark.cn-beijing.volces.com/api/v3/chat/completions",
+    "api_key": "",
+    "model": "",
+    "temperature": 0.2,
+    "timeout": 20,
+    "cache_seconds": 1800,
+    "max_batch_lines": 10,
+    "tm_short_max": 16
+  },
+  "capture": {
+    "mode": "ocr",
+    "interval_ms": 700,
+    "min_text_len": 3,
+    "max_new_per_round": 12,
+    "ocr_scale": 2.0,
+    "ocr_min_confidence": 0.55,
+    "web_poll_ms": 250,
+    "prefer_inject": true,
+    "ui_hover": true,
+    "inject_ports": [9222, 9223, 9400, 9515],
+    "auto_fallback": false,
+    "inject_skip": ".monaco-editor,.monaco-list,.editor,.terminal,.xterm,.output,.debug-console,.notebook"
+  },
+  "memory": {
+    "round_mb": 48,
+    "round_seconds": 2,
+    "min_len": 3,
+    "max_len": 200,
+    "skip_system_modules": true,
+    "keywords": []
+  },
+  "overlay": {
+    "font_family": "Microsoft YaHei",
+    "font_size": 11,
+    "text_color": "#FFE066",
+    "box_color": "#101010",
+    "transparent_key": "#010203",
+    "auto_place": true,
+    "follow_window": true,
+    "cover_original": true
+  },
+  "log_level": "INFO"
+}

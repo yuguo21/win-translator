@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Coverage Test Page</title>
+<style>
+  body { font-family: Georgia, serif; max-width: 860px; margin: 30px auto; line-height: 1.65; color: #222; }
+  h1 { font-size: 28px; }
+  .card { border: 1px solid #ddd; border-radius: 8px; padding: 12px 16px; margin: 18px 0; }
+  p { margin: 12px 0; }
+  a { color: #1554c8; }
+</style>
+</head>
+<body>
+  <h1>Coverage Test: Long Text, Nested HTML, Rich Inline</h1>
+
+  <!-- A. 一大段文字 -->
+  <p id="long-para">
+    Reading slowly is not about moving your eyes at a snail's pace. It is about giving each sentence enough time to land, so that the meaning assembles itself in your head instead of sliding past you. When you rush, you are not reading, you are scanning for keywords, and the shape of the argument disappears. Take the first paragraph twice: once quickly to see where it goes, once slowly to notice how it gets there. Mark one word that surprised you. Ask yourself what the author wanted you to feel, not only what they wanted you to know. Keep a pencil nearby and underline the sentence you would have written differently. Say aloud what happened in the section you just finished; if you cannot, you have not finished it. Slowness is not laziness, and attention is not duration. A focused half hour beats a distracted afternoon every single time, and the habit compounds quietly over months until reading becomes something you do with your whole attention rather than something you endure between other tasks.
+  </p>
+
+  <!-- B. 容器里包着好几段（HTML 包含的情况） -->
+  <div class="card" id="nested-card">
+    <h2>The Three Habits</h2>
+    <p id="nest-p1">First, read a paragraph twice before deciding you understood it.</p>
+    <p id="nest-p2">Second, keep a pencil nearby so that marking stays cheap and immediate.</p>
+    <p id="nest-p3">Third, stop at the end of each section and say aloud what happened.</p>
+  </div>
+
+  <!-- C. 段落里带链接与富格式 -->
+  <p id="rich-para">
+    If you want a longer treatment of this idea, the essay
+    <a href="#x">On Attention and Slowness</a>
+    by
+    <strong>Mary Doe</strong>
+    is worth an hour, and the notes in
+    <em>chapter four</em>
+    explain why speed reading courses oversell themselves.
+  </p>
+</body>
+</html>

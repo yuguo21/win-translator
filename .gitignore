@@ -1,0 +1,37 @@
+# ===== 本机配置与数据：绝对不要提交 =====
+config.json
+config.local.json
+cache.sqlite3
+tm.json
+term_map.json.bak*
+
+# ===== 运行时产生的目录 =====
+logs/
+backups/
+browser_profile/
+browser_profile_test/
+*_probe/
+
+# ===== 内部文档（含本机路径与工作记录，不上传） =====
+docs/开发说明-原始.md
+待决策问题.md
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+pip-wheel-metadata/
+
+# ===== 测试产物 =====
+tools/*.png
+tools/*.json
+tools/*.log
+tools/*.txt
+.tt_*
+
+# ===== 系统 =====
+Thumbs.db
+desktop.ini
+.DS_Store
